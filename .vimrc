@@ -104,7 +104,7 @@ nmap K :Man <cword><CR>
 
 
 
-
+inoremap <leader>e <esc>A
 
 
 
