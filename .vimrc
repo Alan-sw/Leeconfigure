@@ -103,7 +103,7 @@ cmap man Man
 nmap K :Man <cword><CR>
 
 
-
+"to the end of line
 inoremap <leader>e <esc>A
 
 
