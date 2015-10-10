@@ -18,7 +18,7 @@ Bundle 'scrooloose/nerdtree'
 "Bundle 'fholgado/minibufexpl.vim'
 Bundle "scrooloose/syntastic"
 Bundle "davidhalter/jedi"
-"Bundle "c.vim"
+Bundle "c.vim"
 
 filetype plugin indent on
 Bundle 'Valloric/YouCompleteMe'
