@@ -95,6 +95,8 @@ set mouse=a
 "backspace to the uppper line
 :set backspace=2
 
+"vi中所有数字都为10机制
+set nrformats=
 
 
 "vi man page
