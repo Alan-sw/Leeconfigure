@@ -2,8 +2,8 @@ this foler contains my cofigure------Alan Lee
 
 /************now contains**********
 
-.vimrc
-.zshrc
-.tmux.conf
+vim
+zsh and zsh theme af-magic
+tmux
 
 **********************************/
