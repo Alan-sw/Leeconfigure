@@ -19,8 +19,7 @@ Bundle "scrooloose/syntastic"
 Bundle "davidhalter/jedi"
 Bundle "c.vim"
 
-filetype plugin indent on
-"Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'terryma/vim-multiple-cursors'
 
 Bundle 'majutsushi/tagbar'
@@ -33,6 +32,7 @@ Bundle 'kshenoy/vim-signature'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
 
+filetype plugin indent on
 
 filetype plugin on
 
@@ -77,6 +77,7 @@ set cursorline
 set cursorcolumn
 " 高亮显示搜索结果
 set hlsearch
+set incsearch
 
 " 开启语法高亮功能
 syntax enable
@@ -117,7 +118,10 @@ nmap K :Man <cword><CR>
 "to the end of line
 inoremap <leader>e <esc>A
 
-
+set scrolljump=5
+set scrolloff=5
+set sidescroll=3
+set sidescrolloff=3
 
 
 "end of vim own setting
@@ -160,9 +164,11 @@ let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
 
 " YCM 补全菜单配色
 " 菜单
-"highlight Pmenu ctermfg=2 ctermbg=3 guifg=#005f87 guibg=#EEE8D5
+"highlight Pmenu ctermfg=2 ctermbg=3 guifg=#434343 guibg=#434343
+highlight Pmenu ctermfg=2 ctermbg=16 guifg=#434343  guibg=#000000
 " 选中项
-"highlight PmenuSel ctermfg=2 ctermbg=3 guifg=#AFD700 guibg=#106900
+"highlight PmenuSel ctermfg=2 ctermbg=3 guifg=#3D85C6 guibg=#3D85C6
+highlight PmenuSel ctermfg=205  ctermbg=0  guifg=#3D85C6 guibg=#3D85C6
 " 补全功能在注释中同样有效
 let g:ycm_complete_in_comments=1
 " 允许 vim 加载 .ycm_extra_conf.py 文件，不再提示
