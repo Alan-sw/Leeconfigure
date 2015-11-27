@@ -7,7 +7,6 @@ call vundle#rc()
 
 
 Bundle 'gmarik/vundle'
-Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'bling/vim-airline'
 Bundle 'Yggdroot/indentLine'
 Bundle 'a.vim'
@@ -21,7 +20,7 @@ Bundle "davidhalter/jedi"
 Bundle "c.vim"
 
 filetype plugin indent on
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Bundle 'terryma/vim-multiple-cursors'
 
 Bundle 'majutsushi/tagbar'
@@ -31,6 +30,8 @@ Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kshenoy/vim-signature'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'kien/ctrlp.vim'
 
 
 filetype plugin on
@@ -39,10 +40,18 @@ filetype plugin on
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
 
-"use 256 color
+syntax enable
+
+"use256 color
 set t_Co=256
-"use theme
-colorscheme Tomorrow-Night-Bright
+
+set background=dark
+colorscheme solarized
+let g:solarized_termtrans=1
+let g:solarized_contrast="normal"
+let g:solarized_visibility="normal"
+" 允许用指定语法高亮配色方案替换默认方案
+syntax on
 
 
 "vim itself setting
