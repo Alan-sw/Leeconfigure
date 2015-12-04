@@ -29,7 +29,7 @@ Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kshenoy/vim-signature'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'tomasr/molokai'
 Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on
@@ -46,11 +46,13 @@ syntax enable
 set t_Co=256
 
 set background=dark
-colorscheme solarized
-let g:solarized_termtrans=1
-let g:solarized_contrast="normal"
-let g:solarized_visibility="normal"
+colorscheme molokai
+"let g:solarized_termtrans=1
+"let g:solarized_contrast="normal"
+"let g:solarized_visibility="normal"
 " 允许用指定语法高亮配色方案替换默认方案
+"
+let g:molokai_original = 1
 syntax on
 
 
