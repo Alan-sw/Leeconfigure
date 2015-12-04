@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/lee-centos7/.oh-my-zsh
+export ZSH=/home/Lee/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -85,8 +85,8 @@ source $ZSH/oh-my-zsh.sh
 alias vi='vim'
 alias grep="grep --color=auto"
 alias em='emacs'
-alias sbt="sublime"
 alias j="autojump"
+alias tmux="tmux -2"
 
 git config --global user.name "AlanLee"
 git config --global color.branch "auto"
@@ -225,8 +225,6 @@ check-cmd-self-insert() { zle .self-insert && recolor-cmd }
  
  zle -N self-insert check-cmd-self-insert
  zle -N backward-delete-char check-cmd-backward-delete-char
-
-
 
 
 
