@@ -1,0 +1,107 @@
+set nocompatible 
+filetype off
+
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+
+Bundle 'gmarik/vundle'
+Bundle 'tomasr/molokai'
+
+
+filetype plugin indent on
+
+filetype plugin on
+
+
+" 定义快捷键的前缀，即<Leader>
+let mapleader=";"
+
+syntax enable
+
+"use256 color
+set t_Co=256
+
+set background=dark
+colorscheme molokai
+"let g:solarized_termtrans=1
+"let g:solarized_contrast="normal"
+"let g:solarized_visibility="normal"
+" 允许用指定语法高亮配色方案替换默认方案
+"
+let g:molokai_original = 1
+syntax on
+
+
+"vim itself setting
+"禁止光标闪烁
+set gcr=a:block-blinkon0
+" 禁止显示滚动条
+set guioptions-=l
+set guioptions-=L
+set guioptions-=r
+set guioptions-=R
+" 禁止显示菜单和工具条
+set guioptions-=m
+set guioptions-=T
+
+" 总是显示状态栏
+set laststatus=2
+" 显示光标当前位置
+set ruler
+" 开启行号显示
+set number
+" 高亮显示当前行/列
+set cursorline
+set cursorcolumn
+" 高亮显示搜索结果
+set hlsearch
+set incsearch
+
+" 开启语法高亮功能
+syntax enable
+" 允许用指定语法高亮配色方案替换默认方案
+syntax on
+
+" 将制表符扩展为空格
+set expandtab
+" 设置编辑时制表符占用空格数
+set tabstop=4
+" 设置格式化时制表符占用空格数
+set shiftwidth=4
+" 让 vim 把连续数量的空格视为一个制表符
+set softtabstop=4
+" 基于缩进或语法进行代码折叠
+"set foldmethod=indent
+set foldmethod=syntax
+" 启动 vim 时关闭折叠代码
+set nofoldenable
+"show partial commands in the last line of the screen
+set showcmd
+set showmode
+"enable use of the mouse for all modes
+set mouse=a
+"backspace to the uppper line
+:set backspace=2
+
+"vi中所有数字都为10机制
+set nrformats=
+
+
+"vi man page
+source $VIMRUNTIME/ftplugin/man.vim
+cmap man Man
+nmap K :Man <cword><CR>
+
+
+"to the end of line
+inoremap <leader>e <esc>A
+
+set scrolljump=5
+set scrolloff=5
+set sidescroll=3
+set sidescrolloff=3
+
+
+"end of vim own setting
