@@ -1,20 +1,21 @@
-#!bin/sh
+#!/bin/sh
 
 echo "Install will cost a long time, have a coffee..."
 
 #ubuntu or redhat
 if  which apt-get > /dev/null ; then
-    sudo apt-get install -y vim vim-gnome python-dev git zsh tmux
+    sudo apt-get install -y vim python-dev git zsh tmux ctags > /dev/null
 elif which yum > /dev/null; then
-    sudo yum -y install vim git python-devel zsh gcc kernel-devel make ncurses-devel
+    sudo yum -y install vim git python-devel zsh kernel-devel ncurses-devel ctags > /dev/null
 
     #install tmux
     cd ~/Downloads
     curl -OL https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz
     tar -xzf libevent-2.0.21-stable.tar.gz
     cd libevent-2.0.21-stable
-    ./configure --prefix=/usr/local
-    make && sudo make install
+    ./configure --prefix=/usr/local > /dev/null
+    make > /dev/null
+    sudo make install > /dev/null
     
     cd ~/Downloads
     curl -OL http://downloads/sourceforge.net/tmux/tmux-1.9a.tar.gz
